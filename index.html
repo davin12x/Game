@@ -1,78 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <title>Concentration_Game</title>
-		  <link rel="stylesheet" href="css/index.css"/>
-         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-         <script src="Js/script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <link rel="stylesheet" href="css/script.css" type="text/css" />
     </head>
     <body>
-         <h1 id="head">Concentration_Game</h1>
-         <ul id="image_list">
-        <li>
-            <div class="front" id="first"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list1.jpg" alt="Image 1" id="one">
-          
-        </li>
-        <li>
-            <div class="front"  id="second"> <img src="images/cortana.jpg" alt="Cortanas" id="Cortana"></div>
-          
-          <img src="images/list2.jpg" alt="Image 2">
-         
-        </li>
-        <li>
-            <div class="front" id="third"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list3.jpg" alt="Image 3">
-         
-        </li>
-        <li>
-            <div class="front" id="fourth"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-         
-            <img src="images/list4.jpg" alt="Image 4">
-         
-        </li>
-               <li>
-            <div class="front" id="fifth"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list5.jpg" alt="list 5">
-         
-             </li>
-             
-             
-         <ul id="image_list">
-        <li>
-            <div class="front" id="first"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list1.jpg" alt="Image 1" id="one">
-          
-        </li>
-        <li>
-            <div class="front"  id="second"> <img src="images/cortana.jpg" alt="Cortanas" id="Cortana"></div>
-          
-          <img src="images/list2.jpg" alt="Image 2">
-         
-        </li>
-        <li>
-            <div class="front" id="third"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list3.jpg" alt="Image 3">
-         
-        </li>
-        <li>
-            <div class="front" id="fourth"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-         
-            <img src="images/list4.jpg" alt="Image 4">
-         
-        </li>
-               <li>
-            <div class="front" id="fifth"> <img src="images/cortana.jpg" alt="Cortana" id="Cortana"></div>
-          
-            <img src="images/list5.jpg" alt="list 5">
-         
-             </li>
-             
-        
+        <h1 id="title">Concentration_Game</h1>
+        <script>
+            document.write('<div align="center"><table cellpadding="20" cellspacing="0" border="0">');
+            for (var a = 0; a <= 1; a++) 
+            {
+                document.write('<tr>');
+                for (var b = 0; b <= 4; b++) 
+                {
+                    document.write('<td align="center" class="table" id="t'+((5*a)+b)+'"></td>');
+                }
+                document.write('<\/tr>');
+            }
+            document.write('<\/table><\/div>');
+        </script>            
     </body>
 </html>
