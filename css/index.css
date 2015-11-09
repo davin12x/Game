@@ -10,7 +10,19 @@ ul {
   float: left;
 }
 
+
 #image_list img {
-  width: 200px;
+    width: 200px;
+    height: 190px;
+    padding: 20px;
+}
+#head
+{
+    text-align: center;
+}
+.front
+{
+    position: absolute;
+    width: 200px;
     height: 200px;
-    padding: 20px;}
+}
