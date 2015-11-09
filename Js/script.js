@@ -2,12 +2,9 @@ $(document).ready(function(){
     $(".front").click(function(){
         $(this).hide('slow');
         var clickCounter=0;
-       var getid=this.id;
-        var getindex = $( "div" ).index( this );
+       var getid=this.id;//Getting the id value
+        var getindex = $( "div" ).index( this );//getting ndex number
         var imageCounter=[];
-        var clickCounter=0;
-       
-      
             for(var i=-1;i<getindex;i++)
             {
                 imageCounter[getindex]=getid;
@@ -16,9 +13,6 @@ $(document).ready(function(){
             {
                 $(this).show('slow');
             }    
-               
-       
-        
     });
     
     
